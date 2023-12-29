@@ -1,0 +1,2 @@
+# Ignore all generated .class file by compiler
+*.class

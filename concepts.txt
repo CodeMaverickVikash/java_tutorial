@@ -1,0 +1,11 @@
+File name should be same as class name
+
+Variable, datatype and operator
+Taking user input
+String method
+Output formatting by special character
+Math class
+Conditional statement
+Switch Statement
+Looping Statements
+Break and Continue Statements
