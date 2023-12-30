@@ -1,8 +1,12 @@
+
 /**
  * Practice
  */
+
+import com.packages.CommonUtil;
+
 public class Practice {
 	public static void main(String[] args) {
-		System.out.println("Hello world");
+		CommonUtil.log("Hello");
 	}
 }

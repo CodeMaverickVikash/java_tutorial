@@ -1,136 +1,53 @@
-// class Parent
-// {
-// 	String Pname = "Mumtaj";
-// 	int Pmoney = 2000;
-// 	String Pvehicle = "Bike";
+/*
+ * Inheritance - Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a class to inherit properties and behaviors from another class. In Java, you can achieve inheritance using the extends keyword.
+ */
 
-// 	public void Pwork()
-// 	{
-// 		System.out.println("Bank manger");
-// 	}
-// }
+class CommonUtil {
+    public static <T> void log(T msg) {
+        System.out.println(msg);
+    }
+}
 
-// class Child extends Parent
-// {
-// 	String nameC = "Raja";
-// 	int moneyC = 3000;
-// 	String vehicleC = "Car";
+// Base class (superclass)
+class Animal {
+	String name;
 
-// 	public void workC()
-// 	{
-// 		System.out.println("IT professional");
-// 	}
-
-// 	public void whoChild()
-// 	{
-// 		System.out.println(Pname + " child");
-// 	}
-// }
-
-
-// public class Inheritance
-// {
-// 	public static void main(String[] args)
-// 	{
-// 		Child child = new Child();
-
-// 		child.whoChild();
-// 		child.Pwork();
-// 		System.out.println(child.Pname);
-// 	}
-// }
-
-
-// class Vehicle
-// {
-// 	int cost = 550;
-// 	int milege = 50;
-
-// 	public void show_vehicle_details()
-// 	{
-// 		System.out.println("I am vehicle");
-// 		System.out.println("Cost of vehicle is: " + cost);
-// 		System.out.println("Milege of vehicle is: " + milege);
-// 	}
-// }
-
-
-// class Car extends Vehicle
-// {
-// 	String color = "blue";
-// 	int tyres = 4;
-
-// 	public void show_car_details()
-// 	{
-// 		System.out.println("I am car");
-// 		System.out.println("Color of car is: " + color);
-// 		System.out.println("Number of tyres in a car is: " + tyres);
-// 	}
-// }
-
-
-// public class Inheritance
-// {
-// 	public static void main(String[] args)
-// 	{
-// 		Car c = new Car();
-
-// 		// c.show_car_details();
-// 		c.show_vehicle_details();
-// 	}
-// }
-
-
-// Inheritance with constructor
-class Vehicle
-{
-	int cost = 0;
-	int milege = 0;
-
-	public Vehicle(int c, int m)
-	{
-		cost = c;
-		milege = m;
+	// Constructor
+	public Animal(String name) {
+		this.name = name;
 	}
 
-	public void show_vehicle_details()
-	{
-		System.out.println("I am vehicle");
-		System.out.println("Cost of vehicle is: " + cost);
-		System.out.println("Milege of vehicle is: " + milege);
+	// Method
+	public void eat() {
+		CommonUtil.log(name + " is eating.");
 	}
 }
 
+// Derived class (subclass)
+class Dog extends Animal {
+	// Additional field
+	String breed;
 
-class Car extends Vehicle
-{
-	String color = "";
-	int tyres = 0;
-
-	public Car(int c, int m, String col, int ty)
-	{
-		// If you want to send something from child to parent class then use super()
-		super(c, m); // Passing arg to Vehicle class by using super() method
-		color = col;
-		tyres = ty;
+	// Constructor
+	public Dog(String name, String breed) {
+		// Call the superclass constructor
+		super(name);
+		this.breed = breed;
 	}
 
-	public void show_car_details()
-	{
-		System.out.println("I am car");
-		System.out.println("Color of car is: " + color);
-		System.out.println("Number of tyres in a car is: " + tyres);
+	// Additional method
+	public void bark() {
+		CommonUtil.log(name + " is barking. Woof!");
 	}
 }
 
+public class Inheritance {
+	public static void main(String[] args) {
+		// Create an instance of the subclass
+		Dog myDog = new Dog("Buddy", "Golden Retriever");
 
-public class Inheritance
-{
-	public static void main(String[] args)
-	{
-		Car c = new Car(550, 50, "blue", 4);
-
-		// c.show_car_details();
-		c.show_vehicle_details();
+		// Call methods from both the superclass and the subclass
+		myDog.eat(); // Inherited method from Animal class
+		myDog.bark(); // Method specific to Dog class
 	}
 }

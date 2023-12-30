@@ -1,6 +1,6 @@
 import java.util.Scanner; // to input output from keyboard
 
-public class JavaTutorial {
+public class JavaBasic {
 
         static int sum(int x, int y) {
                 return x + y;
@@ -105,7 +105,6 @@ public class JavaTutorial {
 
                 colors[1] = "34"; // Update value of colors[1]
                 System.out.println(colors[1]);
-                System.out.println(colors[3]);
 
                 for (String value : colors) {
                         System.out.println(value);
@@ -119,61 +118,12 @@ public class JavaTutorial {
                         System.out.println(value);
                 }
 
-                // try and catch in java
+                // Try and catch
                 String[] car = { "vikash", "maruti", "suzuki" };
-                System.out.println(car[4]);
                 try {
                         System.out.println(car[4]);
                 } catch (Exception e) {
                         System.out.println(e);
                 }
-                System.out.println("masala");
-                // method calling
-                // int a= 5;
-                // int b= 7;
-                // System.out.println(sum(a,b));
-
-                // mini project_calculator
-
-                // float num_1, num_2;
-                //
-                // System.out.println("enter first num");
-                //// Scanner scan1= new Scanner(System.in);
-                // num_1 = scan.nextFloat();
-                //
-                // System.out.println("enter second num");
-                //// Scanner scan2= new Scanner(System.in);
-                // num_2 = scan.nextFloat();
-                //
-                // System.out.print("you have entered ");
-                // System.out.print(num_1);
-                // System.out.print(" and ");
-                // System.out.println(num_2);
-                //
-                // String prompt = "enter 0 for addition,1 for substraction, 2 for multi, 3 for
-                // division";
-                // System.out.println(prompt);
-                // int input = scan.nextInt();
-                // switch (input) {
-                // case 0:
-                // System.out.println("addition");
-                // System.out.println(num_1 + num_2);
-                // break;
-                // case 1:
-                // System.out.println("substraction");
-                // System.out.println(num_1 - num_2);
-                // break;
-                // case 2:
-                // System.out.println("multi");
-                // System.out.println(num_1 * num_2);
-                // break;
-                // case 3:
-                // System.out.println("division");
-                // System.out.println(num_1 / num_2);
-                // break;
-                // default:
-                // System.out.println("invalid input");
-                //
-                // }
         }
 }
