@@ -1,5 +1,3 @@
-File name should be same as class name
-
 Variable, datatype and operator
 Taking user input
 String method
@@ -9,3 +7,17 @@ Conditional statement
 Switch Statement
 Looping Statements
 Break and Continue Statements
+Arrays method
+Classes and Object
+Access modifiers
+this and super keyword
+Static method
+Method overloading
+Method overriding
+Abstract class and method
+Inheritance
+Interface
+Multi-level Inheritance
+Multiple Inheritance - It is not supported in java but we can implement it by using interface Extend and Implement
+
+Note - File name should be same as class name
